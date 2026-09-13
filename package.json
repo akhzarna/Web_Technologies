@@ -1,0 +1,9 @@
+{
+  "name": "first-lecture-bookstore",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A beginner-friendly HTML, CSS, JavaScript and Node.js bookstore",
+  "scripts": {
+    "start": "node server/server.js"
+  }
+}

@@ -1,0 +1,57 @@
+/* Global styles: try changing these colors during class. */
+* { box-sizing: border-box; }
+body { margin: 0; background: #faf8f3; color: #282d27; font-family: Arial, sans-serif; line-height: 1.6; }
+a { color: inherit; }
+.site-header, main, footer { max-width: 1160px; margin: 0 auto; padding-left: 32px; padding-right: 32px; }
+
+/* Flexbox places the brand and note on opposite sides. */
+.site-header { display: flex; justify-content: space-between; align-items: center; gap: 24px; min-height: 110px; border-bottom: 1px solid #dedfd5; }
+.brand { font-family: Georgia, serif; font-size: 27px; font-weight: bold; text-decoration: none; }
+.brand span { display: block; font-family: Arial, sans-serif; font-size: 9px; letter-spacing: 2px; color: #757b6e; }
+.header-note { color: #717769; font-size: 12px; }
+.intro { padding: 65px 0 48px; }
+.eyebrow { color: #6c775e; font-size: 11px; font-weight: bold; letter-spacing: 2px; }
+h1 { margin: 12px 0; font-family: Georgia, serif; font-weight: normal; font-size: clamp(36px, 6vw, 60px); line-height: 1.15; letter-spacing: -2px; }
+.intro > p:last-child { color: #717568; font-size: 15px; }
+.collection-heading { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+h2 { font-family: Georgia, serif; font-size: 24px; font-weight: normal; }
+.demo-label { color: #7d8075; font-size: 11px; }
+.filters { display: flex; flex-wrap: wrap; gap: 10px; margin: 10px 0 20px; }
+.filters button { border: 1px solid #d9ddcf; border-radius: 24px; padding: 9px 20px; background: transparent; color: #505946; cursor: pointer; font: inherit; font-size: 12px; }
+.filters button:hover { background: #e8ecdf; }
+.filters button[aria-pressed="true"] { background: #384b34; color: white; border-color: #384b34; }
+:focus-visible { outline: 3px solid #ad7132; outline-offset: 4px; }
+.status { color: #74796c; font-size: 12px; min-height: 20px; }
+
+/* flex-wrap lets the cards move to the next row on smaller screens. */
+.books { display: flex; flex-wrap: wrap; gap: 28px 24px; }
+.book-card { flex: 0 0 calc((100% - 72px) / 4); min-width: 0; }
+.book-cover { height: 245px; padding: 25px; border-radius: 3px 9px 9px 3px; border-left: 7px solid #00000018; color: #fff9e8; display: flex; flex-direction: column; justify-content: space-between; box-shadow: 3px 5px 8px #25302212; }
+.cover-symbol { font-family: Georgia, serif; font-size: 48px; }
+.book-cover strong { font-family: Georgia, serif; font-size: 25px; line-height: 1.2; max-width: 180px; }
+.book-category { color: #7b806f; font-size: 9px; letter-spacing: 1px; text-transform: uppercase; margin: 18px 0 5px; }
+h3 { font-family: Georgia, serif; font-size: 18px; margin: 0; line-height: 1.4; }
+.book-author { font-size: 12px; color: #7c8076; margin: 5px 0; }
+.book-price { font-size: 13px; font-weight: bold; margin: 9px 0 0; color: #3e5136; }
+.api-demo { margin: 55px 0; padding: 22px; background: #eef0e7; border: 1px solid #dde2d2; border-radius: 8px; font-size: 13px; }
+.api-demo summary { cursor: pointer; font-weight: bold; }
+.api-demo p { color: #646d5b; }
+#request-url { font-family: monospace; overflow-wrap: anywhere; }
+pre { background: #fcfdf9; padding: 18px; max-height: 280px; overflow: auto; border-radius: 5px; font-size: 12px; }
+footer { display: flex; justify-content: space-between; gap: 18px; border-top: 1px solid #dedfd5; padding-top: 24px; padding-bottom: 30px; font-family: Georgia, serif; }
+footer span { font: 11px Arial, sans-serif; color: #7c8076; }
+
+/* Media queries adjust the layout for tablets and phones. */
+@media (max-width: 800px) {
+  .book-card { flex-basis: calc((100% - 24px) / 2); }
+  .header-note { display: none; }
+  .collection-heading { align-items: flex-start; flex-direction: column; gap: 0; }
+  .demo-label { margin-bottom: 12px; }
+}
+@media (max-width: 450px) {
+  .site-header, main, footer { padding-left: 20px; padding-right: 20px; }
+  .intro { padding-top: 40px; }
+  .book-card { flex-basis: 100%; }
+  .book-cover { height: 260px; }
+  footer { flex-direction: column; }
+}
