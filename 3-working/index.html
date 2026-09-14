@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Bookstore</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <!-- The header introduces the website. -->
+  <header>
+    <h1>My Bookstore</h1>
+    <p>A place to find your next favourite book.</p>
+    <nav aria-label="Main navigation">
+      <a href="#books">Our Books</a>
+      <a href="#about">About Us</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- JavaScript loads book details from the API. -->
+    <section id="books">
+      <h2>Our Books</h2>
+      <p>Browse our collection by subject.</p>
+      <!-- JavaScript shows these controls when it is ready. -->
+      <div id="book-controls" hidden>
+        <label for="book-search">Search books</label>
+        <input id="book-search" type="search" placeholder="Enter a title, author, or keyword">
+        <div id="category-filters" class="book-navigation" role="group" aria-label="Filter books by category"></div>
+        <p id="search-status" role="status"></p>
+        <button id="reset-filters" type="button">Reset search and filters</button>
+      </div>
+
+      <p id="load-status" role="status">Loading books…</p>
+      <button id="retry-books" type="button" hidden>Try again</button>
+      <div id="book-sections" aria-busy="true"></div>
+    </section>
+
+    <section id="cart" hidden aria-labelledby="cart-heading">
+      <h2 id="cart-heading">Your Cart (<span id="cart-count">0</span>)</h2>
+      <p>This practice cart resets when you refresh the page.</p>
+      <p id="cart-empty">Your cart is empty.</p>
+      <ul id="cart-items"></ul>
+      <p class="price">Total: Rs. <span id="cart-total">0</span></p>
+      <button id="clear-cart" type="button" disabled>Clear cart</button>
+      <p id="cart-status" role="status"></p>
+    </section>
+
+    <noscript>Enable JavaScript to load books, search, and filter the collection.</noscript>
+
+    <section id="about">
+      <h2>About Us</h2>
+      <p>Welcome to My Bookstore. We share books that help beginners learn and explore new ideas.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 My Bookstore</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Reading Room | BookStore</title>
+  
+  <link rel="stylesheet" href="/style.css">
+  <script src="/script.js" defer></script>
+
+</head>
+
+<body>
+  <header class="site-header">
+    <a class="brand" href="/">The Reading Room<span>YOUR NEIGHBOURHOOD BOOKSTORE</span></a>
+    <span class="header-note">A small collection. A world of ideas.</span>
+  </header>
+
+  <main>
+    <section class="intro">
+      <p class="eyebrow">GOOD BOOKS, NEW BEGINNINGS</p>
+      <h1>Find your next chapter.</h1>
+      <p>From your first line of code to faraway worlds.<br>Explore the shelves and discover something worth reading.</p>
+    </section>
+
+    <section aria-labelledby="collection-heading">
+      <div class="collection-heading">
+        <h2 id="collection-heading">Browse the collection</h2>
+        <span class="demo-label">A classroom demo · Prices in PKR</span>
+      </div>
+     
+    <div id="category-filters" class="filters" role="group" aria-label="Filter books by category"></div>
+      <p id="status" class="status" role="status" aria-live="polite">Loading the shelves…</p>
+      <div id="books" class="books" aria-label="Books"></div>
+      <noscript>Please enable JavaScript to load books from the server.</noscript>
+    </section>
+
+    <details class="api-demo" open>
+      <summary>Under the hood: browser → server → JSON</summary>
+      <p>Choose a category above. The browser sends a GET request; the server filters the books and returns JSON.</p>
+      <a id="request-url" href="/api/books" target="_blank" rel="noopener">GET /api/books</a>
+      <pre id="json-response" aria-label="JSON response">Waiting for the server…</pre>
+    </details>
+  </main>
+
+  <footer>The Reading Room <span>Built with HTML, CSS, JavaScript & a little curiosity.</span></footer>
+</body>
+</html>

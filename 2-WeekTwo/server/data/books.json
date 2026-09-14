@@ -1,0 +1,10 @@
+[
+  { "id": 1, "title": "HTML: The First Chapter", "author": "Sara Ahmed", "category": "Web Development", "price": 1200, "color": "#c76b47", "symbol": "</>" },
+  { "id": 2, "title": "CSS & Creative Layouts", "author": "Ali Hassan", "category": "Web Development", "price": 1450, "color": "#596c50", "symbol": "{ }" },
+  { "id": 3, "title": "JavaScript Made Simple", "author": "Ayesha Khan", "category": "Programming", "price": 1800, "color": "#b9933e", "symbol": "JS" },
+  { "id": 4, "title": "Thinking in Python", "author": "Omar Malik", "category": "Programming", "price": 1650, "color": "#54758b", "symbol": "Py" },
+  { "id": 5, "title": "A Little Book of Space", "author": "Hina Shah", "category": "Science", "price": 1100, "color": "#666181", "symbol": "✦" },
+  { "id": 6, "title": "The Curious Mind", "author": "Bilal Ali", "category": "Science", "price": 1350, "color": "#497d79", "symbol": "◎" },
+  { "id": 7, "title": "Letters from the City", "author": "Noor Fatima", "category": "Fiction", "price": 950, "color": "#aa6270", "symbol": "Aa" },
+  { "id": 8, "title": "Beyond the Mountains", "author": "Zain Abbas", "category": "Fiction", "price": 1250, "color": "#8b755a", "symbol": "△" }
+]

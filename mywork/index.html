@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Book Store</title>
+    <!-- Linking external CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header class="site-header">
+        <h1>Book Haven</h1>
+        <p>Explore our collection of classic and popular books</p>
+        <!-- Interactive Cart Counter -->
+        <div class="cart-container">
+            🛒 Cart: <span id="cart-count">0</span> items
+        </div>
+    </header>
+
+    <!-- Notification Toast for interactivity feedback -->
+    <div id="toast" class="toast hidden"></div>
+
+    <!-- Main Content: Book Collection -->
+    <main class="container">
+        <h2>Featured Books</h2>
+
+        <div class="book-grid">
+
+            <!-- Book 1 -->
+            <div class="book-card">
+                <div class="book-cover cover-blue">
+                    <span class="cover-text">The Great Gatsby</span>
+                </div>
+                <div class="book-info">
+                    <span class="badge">Classic</span>
+                    <h3 class="book-title">The Great Gatsby</h3>
+                    <p class="book-author">by F. Scott Fitzgerald</p>
+                    <p class="book-description">
+                        A story of ambition, love, and the disillusionment of the American Dream in the 1920s.
+                    </p>
+                    <p class="book-price">$12.99</p>
+                    <button class="buy-btn" data-title="The Great Gatsby">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Book 2 -->
+            <div class="book-card">
+                <div class="book-cover cover-green">
+                    <span class="cover-text">To Kill a Mockingbird</span>
+                </div>
+                <div class="book-info">
+                    <span class="badge">Drama</span>
+                    <h3 class="book-title">To Kill a Mockingbird</h3>
+                    <p class="book-author">by Harper Lee</p>
+                    <p class="book-description">
+                        A profound look at justice, empathy, and courage in the American South through young Scout's eyes.
+                    </p>
+                    <p class="book-price">$14.50</p>
+                    <button class="buy-btn" data-title="To Kill a Mockingbird">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Book 3 -->
+            <div class="book-card">
+                <div class="book-cover cover-purple">
+                    <span class="cover-text">1984</span>
+                </div>
+                <div class="book-info">
+                    <span class="badge">Sci-Fi</span>
+                    <h3 class="book-title">1984</h3>
+                    <p class="book-author">by George Orwell</p>
+                    <p class="book-description">
+                        A haunting dystopian tale exploring surveillance, totalitarianism, and the loss of personal freedom.
+                    </p>
+                    <p class="book-price">$11.20</p>
+                    <button class="buy-btn" data-title="1984">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Book 4 -->
+            <div class="book-card">
+                <div class="book-cover cover-orange">
+                    <span class="cover-text">Pride and Prejudice</span>
+                </div>
+                <div class="book-info">
+                    <span class="badge">Romance</span>
+                    <h3 class="book-title">Pride and Prejudice</h3>
+                    <p class="book-author">by Jane Austen</p>
+                    <p class="book-description">
+                        A witty romantic novel tracking the emotional development of Elizabeth Bennet and Mr. Darcy.
+                    </p>
+                    <p class="book-price">$10.75</p>
+                    <button class="buy-btn" data-title="Pride and Prejudice">Add to Cart</button>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="site-footer">
+        <p>&copy; 2026 Book Haven. Web Technologies Classroom Demo.</p>
+    </footer>
+
+    <!-- Linking external JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
